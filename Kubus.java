@@ -1,13 +1,22 @@
 package BangunRuang;
 
-public class Kubus {
-    // Metode untuk menghitung volume kubus
-    public double hitungVolume(double sisi) {
+public class Kubus extends BangunRuang {
+    private float sisi;
+
+    // Konstruktor untuk Kubus
+    public Kubus(float sisi) {
+        this.sisi = sisi;
+    }
+
+    // Implementasi metode hitungVolume untuk Kubus
+    @Override
+    public float hitungVolume() {
         return sisi * sisi * sisi;
     }
 
-    // Metode untuk menghitung luas permukaan kubus
-    public double hitungLuasPermukaan(double sisi) {
+    // Implementasi metode hitungLuasPermukaan untuk Kubus
+    @Override
+    public float hitungLuasPermukaan() {
         return 6 * sisi * sisi;
     }
 }

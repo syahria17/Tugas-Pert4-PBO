@@ -1,17 +1,12 @@
 package BangunRuang;
 
 public class KubusMain {
-     public static void main(String[] args) {
-        // Membuat objek Kubus
-        Kubus kubus = new Kubus();
+    public static void main(String[] args) {
+        // Menggunakan referensi Bentuk3D untuk objek Kubus
+        BangunRuang kubus = new Kubus(4);
 
         // Menghitung volume dan luas permukaan kubus
-        double sisi = 4;
-        double volumeKubus = kubus.hitungVolume(sisi);
-        double luasPermukaanKubus = kubus.hitungLuasPermukaan(sisi);
-
-        // Menampilkan hasil perhitungan
-        System.out.println("Volume Kubus: " + volumeKubus);
-        System.out.println("Luas Permukaan Kubus: " + luasPermukaanKubus);
+        System.out.println("Volume Kubus: " + kubus.hitungVolume());
+        System.out.println("Luas Permukaan Kubus: " + kubus.hitungLuasPermukaan());
     }
 }
